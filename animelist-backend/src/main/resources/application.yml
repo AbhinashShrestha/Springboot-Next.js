@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/animecrud
+    username: anime
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+    show-sql: true
+    open-in-view: true
+logging:
+  level:
+    org:
+      springframework:
+        security : TRACE
+        jdbc: DEBUG
+
+server:
+  error:
+    include-message: always
